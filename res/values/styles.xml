@@ -1,0 +1,48 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="mainActivityBack" parent="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen">
+    	<!--item name="android:windowBackground">@drawable/main_back</item-->
+	</style>
+	
+     <style name="boardBack" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+    	<item name="android:windowBackground">@drawable/main_back</item>
+	</style>
+	
+    <style name="dialogesTheme" parent="@android:style/Theme.Dialog">
+    	<item name="android:windowBackground">@drawable/my_dialog_theme</item>
+	</style>
+	
+     <style name="dialogesTheme1" parent="@android:style/Theme.Dialog">
+    	<item name="android:windowBackground">@drawable/new_load_back</item>
+	</style>
+	
+	<style name="myAdsDialogeStyle" parent="@android:style/Theme.Translucent.NoTitleBar">
+	    <item name="android:background">@color/TransBlack</item> 
+	</style>
+	
+    <!-- ========= For Rating Bar ============ -->
+    <style name="puzzleRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_stars</item>   
+        <item name="android:minHeight">22dip</item>
+        <item name="android:maxHeight">22dip</item>
+    </style>
+    <!-- ========= For Rating Bar ============ -->
+    
+</resources>

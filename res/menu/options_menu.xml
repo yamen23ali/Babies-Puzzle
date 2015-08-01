@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:id="@+id/show_original_picture" android:title="Show Original Picture" ></item>
+	<item android:id="@+id/reset_wrong_pieces" android:title="Reset Wrong Pieces" ></item>
+	<item android:id="@+id/place_pieces" android:title="Place Pieces" ></item>
+	<item android:id="@+id/pause" android:title="Pause" ></item>    
+</menu>

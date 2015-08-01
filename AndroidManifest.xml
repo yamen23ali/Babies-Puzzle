@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.safey.BabiesPuzzle"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="11" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.safey.BabiesPuzzle.MainActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/mainActivityBack"
+            android:screenOrientation="landscape">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.safey.BabiesPuzzle.PuzzleBoard"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask"
+            android:theme="@style/boardBack">
+        </activity>
+        
+        <activity
+            android:name="com.safey.BabiesPuzzle.ChoosePuzzle"
+            android:screenOrientation="landscape"
+            android:label="Choose Puzzle"
+            android:theme="@style/boardBack" >
+        </activity>
+        
+        <activity
+            android:name="com.safey.BabiesPuzzle.Helpers"
+            android:screenOrientation="landscape"
+            android:theme="@style/dialogesTheme"
+            android:label="Helpers" >
+        </activity>
+        
+        <activity
+            android:name="com.safey.BabiesPuzzle.NewUser"
+            android:label=""            
+            android:theme="@style/dialogesTheme1">
+        </activity>
+        
+        <activity
+            android:name="com.safey.BabiesPuzzle.LoadUser"
+            android:label="" 
+            android:theme="@style/dialogesTheme1">
+        </activity>
+        
+        <activity
+            android:name="com.safey.BabiesPuzzle.ChooseLevel"
+            android:label="" 
+            android:theme="@style/dialogesTheme1">
+        </activity>
+        
+        <activity
+            android:name="com.safey.BabiesPuzzle.Rating"
+            android:label=""
+            android:theme="@style/dialogesTheme1">
+        </activity>
+         
+         <activity
+            android:name="com.safey.BabiesPuzzle.HelpersMenu"
+            android:label="" 
+            android:theme="@style/dialogesTheme">
+        </activity>
+        
+        <activity
+            android:name="com.safey.BabiesPuzzle.ExitDialog"
+            android:label="" 
+            android:theme="@style/dialogesTheme1">
+        </activity>
+        
+        <activity
+            android:name="com.safey.BabiesPuzzle.MyADSDialogBox"
+            android:label="" 
+            android:theme="@style/myAdsDialogeStyle">
+        </activity>
+        
+        <activity android:name="com.google.ads.AdActivity"
+   				android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<meta-data android:value="true" android:name="ADMOB_ALLOW_LOCATION_FOR_ADS" />
+	<uses-permission android:name="android.permission.SET_WALLPAPER" />
+	<uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
+</manifest>
